@@ -18,7 +18,7 @@
     </form>
     <hr>
     {% if recommended_movie_names %}
-    <h2>Recommended Movies:</h2>
+    <h2>Recommended Movies for {{ selected_movie }}</h2> <!-- Added selected movie name here -->
     <div>
         {% for i in range(recommended_movie_names|length) %}
         <div style="display: inline-block; margin-right: 20px;">
@@ -27,6 +27,7 @@
         </div>
         {% endfor %}
     </div>
-    {% endif %}
+{% endif %}
+
 </body>
 </html>
